@@ -13,12 +13,12 @@ import Menu from "./components/menu/menu";
 
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(true)
+  const [menuOpen,setMenuOpen] = useState(false)
   
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
       
       <Intro/>
